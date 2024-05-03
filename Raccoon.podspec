@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 	Ownership and Distribution Rights Reserved with Team Raccoon.
 	LICENSE
 	}
-    s.ios.deployment_target  = '9.0'
+    s.ios.deployment_target  = '12.0'
     s.source       = {
                         :git => "https://github.com/Flying-Raccoon-AI/raccoon-ios.git",
 			:tag => "#{s.version}"
