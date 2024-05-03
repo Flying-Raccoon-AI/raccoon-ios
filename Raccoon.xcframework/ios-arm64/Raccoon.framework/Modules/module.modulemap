@@ -1,0 +1,11 @@
+framework module Raccoon {
+  umbrella header "Raccoon.h"
+  export *
+
+  module * { export * }
+}
+
+module Raccoon.Swift {
+  header "Raccoon-Swift.h"
+  requires objc
+}
