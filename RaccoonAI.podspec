@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name         = 'RaccoonAI'
     s.module_name  = 'Raccoon'
-    s.version      = '0.0.3'
+    s.version      = '0.0.4'
     s.summary      = "AI That Can Take Actions and Simplify Apps"
     s.description  = <<-DESC
                     AI That Can Take Actions and Simplify Apps

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Raccoon-Swift.h</key>
 		<data>
-		EOrbcaFfgGROWUQYLBwaxvceFEY=
+		xUMzDERDJblOXZoeDlL3sLEumew=
 		</data>
 		<key>Headers/Raccoon.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		YzIHfmoY0mMIteATKCLPpIbeGPc=
+		PfMewswMgmIEgHqZaEMtnqB3p10=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+JH2OFdKbHhKCRCP0+uwZxSBdIk=
+		6AsZVHEN8gJPU/USL1HANwozFX0=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+JH2OFdKbHhKCRCP0+uwZxSBdIk=
+		6AsZVHEN8gJPU/USL1HANwozFX0=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rXVO+e0q+Bmg8QfvND1XrcEXq0M=
+		o4DKal5vXGnX51qmmJ59Ea7UT2w=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		YzIHfmoY0mMIteATKCLPpIbeGPc=
+		PfMewswMgmIEgHqZaEMtnqB3p10=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1D3N2O2tSjIQIbaKJVcWIc5h6K8=
+		PQRIStldDoV7ZRlmThDBPllUWfw=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1D3N2O2tSjIQIbaKJVcWIc5h6K8=
+		PQRIStldDoV7ZRlmThDBPllUWfw=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AqB3E1otiHwG0J67go37iofSubY=
+		SNaffZudS8FiSmU5rRiypHz8IaU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+aI2RBvZKfujTOmQ5VwlygBQyCzik8ar4/NJQ5E5GeY=
+			6dnZuAC1oRZ4Vkyi5yg6nHNe+VVQCYta1SA8DCiDqdc=
 			</data>
 		</dict>
 		<key>Headers/Raccoon.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MbNSudp3kRtF95CN4Ll44PRlnrFmmPl75JnzvtGZ+uM=
+			e+vSp63cs1tA/hCNSkNupEd/wEVwv5ioJk5peQAM7O0=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/TG39nt0v+3xuK/my5wYo6TLg5XQZ55Mtf9u2lC5Evk=
+			fUPxdajrs9zOpA/5uNYSJR2O++NusY0jEN/Rplw3p9g=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/TG39nt0v+3xuK/my5wYo6TLg5XQZ55Mtf9u2lC5Evk=
+			fUPxdajrs9zOpA/5uNYSJR2O++NusY0jEN/Rplw3p9g=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vnEvXFKhO0C2I8rUd7ehKzKtApimjrDDMQXpeOvXkxk=
+			EQDslrdvxJFZ8K8d4dXwKoVGC6MWY9gaATy7xdVJEfU=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MbNSudp3kRtF95CN4Ll44PRlnrFmmPl75JnzvtGZ+uM=
+			e+vSp63cs1tA/hCNSkNupEd/wEVwv5ioJk5peQAM7O0=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			axoNv5cz376rn0gFBOKAgrF+qgu5K2rnXvGCBB/AGzM=
+			A1tH0yX0FOW+0GakxPotxNeZxrbTiftPtoHUYyKocaI=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			axoNv5cz376rn0gFBOKAgrF+qgu5K2rnXvGCBB/AGzM=
+			A1tH0yX0FOW+0GakxPotxNeZxrbTiftPtoHUYyKocaI=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cVj3c5ozxy93NQooWxTiQ/pQL9t1vzPYQ6+DNyikg7U=
+			COxoxysY0buHyqA/hweWX1/k9NvRnQebaNDFZO5trzo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

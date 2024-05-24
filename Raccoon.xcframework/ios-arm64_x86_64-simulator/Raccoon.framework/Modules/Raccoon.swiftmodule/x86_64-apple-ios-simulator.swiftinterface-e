@@ -85,6 +85,7 @@ public struct RRChatMessage : Swift.Decodable, Swift.Encodable {
   public static var showTrackingView: Swift.Bool
   public static var showRocketRaccoon: Swift.Bool
   public var trackingButton: Raccoon.RaccoonTrackingControlView?
+  weak public var currentSegueController: UIKit.UIViewController?
   public func initialize(secretKey: Swift.String, userId: Swift.String)
   public func initialize(secretKey: Swift.String, userId: Swift.String, endpoint: Swift.String)
   public func setInitialized(initialized: Swift.Bool)
@@ -125,9 +126,9 @@ public struct RRAction : Swift.Decodable {
   public static let shared: Raccoon.RRFloaterManager
   final public var floaterView: Raccoon.RRFloaterView?
   final public let bottomCloseView: Raccoon.RRBottomCloseView
-  final public var layoutData: Raccoon.RRLayout?
+  final public var layoutData: Raccoon.RRLayout
   final public func overrideNavigationDelegate()
-  final public func show(with layout: Raccoon.RRLayout)
+  final public func show()
   final public func floaterMoveEvents()
   @objc deinit
 }
@@ -145,8 +146,9 @@ extension Raccoon.RRFloaterManager : Raccoon.RRFloaterViewDelegate {
   public static func uploadMedia(viewName: Swift.String, file: Swift.String, fileExtension: Swift.String, callback: @escaping (Swift.String?) -> ())
   public static func registerTask(key: Swift.String, callback: @escaping ([Swift.String : Any]) -> Swift.Void)
   public static func registerSnapshots(registerTaskResponse: [Swift.String : Any], taskFlow: [Raccoon.RaccoonSnapshot])
-  public static func getSteps(query: Swift.String, callback: @escaping ([Raccoon.RRAction]?) -> Swift.Void)
+  public static func getSteps(query: Swift.String, callback: @escaping ([Swift.String : Any]?) -> Swift.Void)
   public static func uploadChatHistory(chatHistory: [Raccoon.RRChatMessage])
+  public static func logEvent(logEvent: Raccoon.RaccoonLogEvent, taskId: Swift.String = "")
   @objc deinit
 }
 public struct RaccoonScrollView : Swift.Decodable, Swift.Encodable, Swift.Equatable {
@@ -177,6 +179,7 @@ public struct RRDefaults : Swift.Decodable, Swift.Encodable {
   public static func getRaccoonElementType(of view: UIKit.UIView) -> (Raccoon.RaccoonType, Raccoon.RaccoonInputType, Swift.String)
   public static func getViewOrientation() -> Swift.String
   public static func isRunningOnSimulator() -> Swift.Bool
+  public static func getNavigationControllerFromRoot() -> UIKit.UINavigationController?
   @objc deinit
 }
 public struct RRActionPosition : Swift.Decodable {
@@ -210,9 +213,9 @@ public struct RaccconElement : Swift.Decodable, Swift.Encodable {
   public let width: Swift.Int
   public let height: Swift.Int
   public let actionName: Swift.String
-  public let isNavigational: Swift.Bool
+  public var isNavigational: Swift.Bool
   public let actionId: Swift.String
-  public let destination: Swift.String
+  public var destination: Swift.String
   public var value: Swift.String
   public let elementDescription: Swift.String
   public let type: Raccoon.RaccoonType
@@ -240,9 +243,11 @@ public enum RaccoonType : Swift.String, Swift.Decodable, Swift.Encodable {
   case TYPE_RADIO_GROUP
   case TYPE_INPUT
   case TYPE_TABBAR
+  case TYPE_BAR_BUTTON_ITEM
   case TYPE_SEARCH
   case TYPE_SEARCH_CANCEL
   case TYPE_SYSTEM_BACK
+  case TYPE_PICKER_VIEW
   case TYPE_DEFAULT
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -258,6 +263,7 @@ public enum RaccoonInputType : Swift.String, Swift.Decodable, Swift.Encodable {
   case TYPE_SELECT
   case TYPE_PROGRESS_BAR
   case TYPE_TOGGLE
+  case TYPE_BAR_BUTTON_ITEM
   case TYPE_DEFAULT
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -274,12 +280,29 @@ public enum RRViewType : Swift.String, Swift.Decodable, Swift.Encodable {
     get
   }
 }
+public enum RaccoonLogEvent : Swift.String, Swift.Decodable, Swift.Encodable {
+  case RACCOON_INITIALIZED
+  case CHAT_VIEW_OPEN
+  case MESSAGE_SENT
+  case NON_ACTION_RESPONSE
+  case ACTION_RESPONSE
+  case TASK_SUCCESS
+  case TASK_FAILURE
+  case ACTION_RESPONSE_TIMEOUT
+  case CHAT_FLOATER_DISMISSED
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct RaccoonSnapshot : Swift.Decodable, Swift.Encodable, Swift.Equatable {
   public let viewName: Swift.String
   public let viewHeight: Swift.Int
   public let viewWidth: Swift.Int
   public let viewOrientation: Swift.String
   public let elements: [Raccoon.RaccconElement]
+  public var inputs: [Raccoon.RaccconElement]
   public let actionElement: Raccoon.RaccconElement
   public let scrollDetails: [Swift.String : Raccoon.RaccoonScrollView]
   public let viewDescription: Swift.String
@@ -332,3 +355,6 @@ extension Raccoon.RaccoonInputType : Swift.RawRepresentable {}
 extension Raccoon.RRViewType : Swift.Equatable {}
 extension Raccoon.RRViewType : Swift.Hashable {}
 extension Raccoon.RRViewType : Swift.RawRepresentable {}
+extension Raccoon.RaccoonLogEvent : Swift.Equatable {}
+extension Raccoon.RaccoonLogEvent : Swift.Hashable {}
+extension Raccoon.RaccoonLogEvent : Swift.RawRepresentable {}

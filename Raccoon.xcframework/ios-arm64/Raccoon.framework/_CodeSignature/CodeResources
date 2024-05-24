@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Raccoon-Swift.h</key>
 		<data>
-		5YykKziye61OQhKccbcr6DNtjnk=
+		ZksBAwbwSRVFAozjeBSe3kARGKY=
 		</data>
 		<key>Headers/Raccoon.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		YzIHfmoY0mMIteATKCLPpIbeGPc=
+		PfMewswMgmIEgHqZaEMtnqB3p10=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		LhBbjtwUFHrrObSp/NXP7SZomg0=
+		PpLGt5RhjQI4h507bw6cjO7S00s=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		LhBbjtwUFHrrObSp/NXP7SZomg0=
+		PpLGt5RhjQI4h507bw6cjO7S00s=
 		</data>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NkkWJ6q1QlWbCR4dEFL6rkro12s=
+		pGb/kSGj36ucv15akcsJiluXUIE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wjFkNmT6w9+k5FRIwEVe+fhbjkkKpvvyipdIvpvA3Mo=
+			htiX9a8HNGEoH7QePrtFNKLbw2cm3P3NBm0Y/6JKtOo=
 			</data>
 		</dict>
 		<key>Headers/Raccoon.h</key>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MbNSudp3kRtF95CN4Ll44PRlnrFmmPl75JnzvtGZ+uM=
+			e+vSp63cs1tA/hCNSkNupEd/wEVwv5ioJk5peQAM7O0=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aBN59ZwftbwRYjiVgYbR9+Yi9eGFH4c753aWLIrwnXs=
+			LIs2KZqKT0vz96Dx4/JPGpEltoajI8VC92gaXnxmjWM=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aBN59ZwftbwRYjiVgYbR9+Yi9eGFH4c753aWLIrwnXs=
+			LIs2KZqKT0vz96Dx4/JPGpEltoajI8VC92gaXnxmjWM=
 			</data>
 		</dict>
 		<key>Modules/Raccoon.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u/ocZdYoc9bCxd9wodm1YwyLPC3pkSqZ9IZT0J9ofc4=
+			MYyBNbEgTZm/Qn7JpFMzeIprJUjqnRzZ7ij03SlKX1A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -331,6 +331,8 @@ SWIFT_CLASS("_TtC7Raccoon16RRFloaterManager")
 
 SWIFT_CLASS("_TtC7Raccoon13RRFloaterView")
 @interface RRFloaterView : UIView
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)layoutSubviews;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -362,6 +364,10 @@ SWIFT_CLASS("_TtC7Raccoon26RaccoonTrackingControlView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
+
+
+
 
 
 
@@ -712,6 +718,8 @@ SWIFT_CLASS("_TtC7Raccoon16RRFloaterManager")
 
 SWIFT_CLASS("_TtC7Raccoon13RRFloaterView")
 @interface RRFloaterView : UIView
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)layoutSubviews;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -743,6 +751,10 @@ SWIFT_CLASS("_TtC7Raccoon26RaccoonTrackingControlView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
+
+
+
 
 
 
